@@ -26,17 +26,17 @@ body {
   font-size: 60px;
   line-height: 72px;
   text-align: center;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .introduction__text {
   font-size: 20px;
   line-height: 24px;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .paragraph__text {
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .introduction__content {
@@ -51,7 +51,7 @@ body {
   line-height: 53px;
   padding-top: 25px;
   padding-left: 45px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 .introduction__list {
@@ -67,7 +67,7 @@ a {
 
 li {
   font-size: 20px;
-  padding-bottom: 10px;
+  padding-top: 10px;
 }
 
 .rules__indent {
@@ -78,7 +78,7 @@ li {
   font-weight: 900;
   font-size: 36px;
   line-height: 43px;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .rules__ident_first-block {
@@ -90,11 +90,11 @@ li {
   font-size: 20px;
   line-height: 24px;
   padding-left: 30px;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .rules__indent_img {
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .rules__ident_second-block {
@@ -117,11 +117,11 @@ li {
 }
 
 .indent__dom_img {
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .indent__dom_img-two {
-  padding-bottom: 30px;
+  margin-bottom: 30px;
   margin-left: 240px;
 }
 
@@ -142,40 +142,40 @@ figcaption {
 }
 
 .indent__dom_img-three {
-  padding-left: 57px;
-  padding-bottom: 30px;
+  margin-left: 57px;
+  margin-bottom: 30px;
 }
 .indent__dom_img-four {
-  padding-left: 16px;
-  padding-bottom: 30px;
+  margin-left: 16px;
+  margin-bottom: 30px;
 }
 
 .indent__none-text {
   font-size: 20px;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .indent__none_img {
-  padding-left: 240px;
-  padding-bottom: 30px;
+  margin-left: 240px;
+  margin-bottom: 30px;
 }
 
 .indent__none_img-two {
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .indent__none_img-three {
-  padding-left: 137px;
-  padding-bottom: 30px;
+  margin-left: 137px;
+  margin-bottom: 30px;
 }
 
 .indent__none_img-four {
-  padding-left: 382px;
-  padding-bottom: 30px;
+  margin-left: 382px;
+  margin-bottom: 30px;
 }
 
 .indent__none_img-five {
-  padding-left: 290px;
+  margin-left: 290px;
   margin-bottom: 50px;
 }
 
