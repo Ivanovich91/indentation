@@ -9,6 +9,7 @@
   <title>indentation</title>
 </head>
 <body>
+  <article>
     <div class="container">
       <section class="introduction">
         <h1 class="introduction__title">Отступы в вёрстке: margin и padding</h1>
@@ -23,14 +24,14 @@
           за их пределы. Эти знания особенно важны для начинающих, но также будут полезным напоминанием и для более
           опытных верстальщиков. Итак, поговорим о фундаментальных основах работы с отступами в вёрстке.</p>
 
-        <div class="introduction__content">
+        <nav class="introduction__content">
           <h2 class="introduction__content_title">Содержание:</h2>
           <ol class="introduction__list">
             <li><a href="#first__section">Отступ задается от предыдущего элемента к следующему</a></li>
             <li><a href="#second__section">Отступ задается последнему возможному элементу в DOM-дереве</a></li>
             <li><a href="#third__section">Для последнего элемента группы отступ обнуляется</a></li>
           </ol>
-        </div>
+        </nav>
       </section>
 
       <section class="rules__indent" id="first__section">
@@ -68,48 +69,48 @@
 
       <section class="indent__dom" id="second__section">
         <h2 class="title">Отступ задается последнему возможному элементу в DOM-дереве</h2>
-        <p class="indent__dom_text">Вообще, margin задают исключительно между соседними элементами DOM-дерева. Для примера, посмотрите на этот список:</p>
+        <p class="indent__text">Вообще, margin задают исключительно между соседними элементами DOM-дерева. Для примера, посмотрите на этот список:</p>
         <img src="img/example-code.png" alt="Пример кода" class="indent__dom_img">
         <img src="img/third-section.png" alt="" class="indent__dom_img-two">
-        <p class="indent__dom_text">Отступ делают за счёт соседних элементов, а не дочерних:</p>
+        <p class="indent__text">Отступ делают за счёт соседних элементов, а не дочерних:</p>
 
         <figure>
           <img class="figure__img" src="img/fourth-section.png" alt="">
           <figcaption><b>ВАЖНО</b>: здесь .list-item — последний возможный элемент в котором мы задаём отступ, чтобы разделить списки.</figcaption>
         </figure>
 
-        <p class="indent__dom_text">Казалось бы, можно задать отступ параграфу <i>&lt;p&gt;</i>, либо обёртке <i>&lt;article&gt;</i> для достижения той же цели. Внешне останется все точно также,
+        <p class="indent__text">Казалось бы, можно задать отступ параграфу <i>&lt;p&gt;</i>, либо обёртке <i>&lt;article&gt;</i> для достижения той же цели. Внешне останется все точно также,
         но так делать не рекомендуется.</p>
 
-        <p class="indent__dom_text">Предыдущий пример был достаточно простым, но бывает вложенность значительно больше.</p>
+        <p class="indent__text">Предыдущий пример был достаточно простым, но бывает вложенность значительно больше.</p>
 
         <img class="indent__dom_img-three" src="img/example-code_two.png" alt="">
 
-        <p class="indent__dom_text">В случае с заголовком, если ему необходим отступ сверху, последним элементом будет section.
+        <p class="indent__text">В случае с заголовком, если ему необходим отступ сверху, последним элементом будет section.
           Именно для него задается padding-top, а не div с классом container. Свойства margin, которые стоят по умолчанию необходимо обнулить.</p>
 
         <img class="indent__dom_img-four" src="img/fifth-section.png" alt="">
 
-        <p class="indent__dom_text">Это необходимо для более простого поиска отступов в будущем — для вас или того, кто будет верстать после вас. Кроме того, возможны
+        <p class="indent__text">Это необходимо для более простого поиска отступов в будущем — для вас или того, кто будет верстать после вас. Кроме того, возможны
           серьёзные проблемы при динамическом дублировании или выводе вёрстки с нестандартной структурой отступов.</p>
       </section>
 
       <section class="indent__none" id="third__section">
         <h2 class="title">Для последнего элемента группы отступ всегда обнуляется</h2>
-        <p class="indent__none-text">Для наглядности возьмём наш предыдущий пример с рецептами</p>
-        <p class="indent__none-text">Между рецептами расстояние одинаковое. Можно заметить, что и до следующего блока расстояние такое же.</p>
+        <p class="indent__text">Для наглядности возьмём наш предыдущий пример с рецептами</p>
+        <p class="indent__text">Между рецептами расстояние одинаковое. Можно заметить, что и до следующего блока расстояние такое же.</p>
         <img class="indent__none_img" src="img/healthy-recipes.png" alt="">
-        <p class="indent__none-text">В соответствии со вторым принципом: последний <i>margin</i> обнуляется, а нижний отступ задаётся через <i>padding</i>
+        <p class="indent__text">В соответствии со вторым принципом: последний <i>margin</i> обнуляется, а нижний отступ задаётся через <i>padding</i>
           для <i>section</i>. Я чаще всего задаю padding для секции с обоих сторон, если расстояние между секциями 100px
           задаю секциям <i>padding-top:50px</i> и <i>padding-bottom:50px</i>.</p>
         <img class="indent__none_img" src="img/healthy-recipes_two.png" alt=""><br>
         <img class="indent__none_img-two" src="img/example-code_three.png" alt="">
-        <p class="indent__none-text">Для большего понимания рассмотрим другой пример, который часто встречается на практике:</p>
+        <p class="indent__text">Для большего понимания рассмотрим другой пример, который часто встречается на практике:</p>
         <img class="indent__none_img-two" src="img/header-screen.png" alt=""><br>
         <img class="indent__none_img-three" src="img/example-code_four.png" alt="">
-        <p class="indent__none-text">Здесь нас интересует отступ между пунктами меню и списком с кнопкой поиска. Отступы между пунктами меню задаются так:</p>
+        <p class="indent__text">Здесь нас интересует отступ между пунктами меню и списком с кнопкой поиска. Отступы между пунктами меню задаются так:</p>
         <img class="indent__none_img-four" src="img/example-code_five.png" alt="">
-        <p class="indent__none-text">Советую использовать псевдоклассы :last-child чаще других, например так:
+        <p class="indent__text">Советую использовать псевдоклассы :last-child чаще других, например так:
         </p>
         <img class="indent__none_img-five" src="img/example-code_six.png" alt="">
       </section>
@@ -128,5 +129,6 @@
           простоты вёрстки. Но для этого эти принципы необходимо хорошо знать.</p>
       </div>
     </div>
+  </article>
 </body>
 </html>

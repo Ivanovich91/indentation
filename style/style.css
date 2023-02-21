@@ -115,11 +115,11 @@ li {
 }
 
 .indent__dom {
-  max-width: 1081px;
+  max-width: 1080px;
   margin-bottom: 50px;
 }
 
-.indent__dom_text {
+.indent__text {
   font-size: 20px;
   margin-bottom: 30px;
 }
@@ -159,11 +159,6 @@ figcaption {
 }
 .indent__dom_img-four {
   margin-left: 16px;
-  margin-bottom: 30px;
-}
-
-.indent__none-text {
-  font-size: 20px;
   margin-bottom: 30px;
 }
 
